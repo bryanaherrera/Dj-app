@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header msg="SONG REQUEST"/>
+  <Form></Form>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/header.vue'
+import Form from './components/requestForm.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Form
   }
 }
 </script>
@@ -23,4 +25,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
