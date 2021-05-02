@@ -1,12 +1,23 @@
 <template>
-    <div>
-      <router-view/>
-    </div>
+  <Header msg="DJ HILO"/>
+  <Header msg="Events"/>
+  <Event eventName="Evan's Big Bash" eventId="5252"></Event>
+  <Event eventName="Bolin Wedding" eventId="6732"></Event>
+  <Event eventName="Leti's Quince" eventId="3827"></Event>
+  <router-link to="/"><p>Create an event</p></router-link>
 </template>
+
 <script>
-    export default {
-    name: 'Landing'
-    }
+import Event from '../components/eventCard.vue'
+import Header from '../components/header.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Event
+  }
+}
 </script>
 
 <style>
@@ -32,27 +43,5 @@ body{
     background: rgb(214, 208, 72);
     background: linear-gradient(0deg, rgba(214, 208, 72, 1) 0%, rgba(229, 171, 19, 1) 35%, rgba(92, 22, 148, 1) 100%);
 }
-
-input[type=text]{
-        padding: 10px;
-        margin-bottom: 5px;
-        border: 0;
-        box-shadow: 0 15px 4px rgba(0,0,0,0.06);
-        border-radius: 10px;
-        background-color: rgb(196, 196, 196, .5);
-    }
-    input[type=submit]{
-        background-color: #ffff;
-        border-radius: 10px;
-        padding: 10px;
-        border: 0;
-    }
-    .account p{
-      display: inline;
-    }
-    .account a {
-      color: rgb(196, 196, 196);
-      margin-top: 5px;
-      margin-right: 5px;
-    }
 </style>
+

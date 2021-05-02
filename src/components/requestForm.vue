@@ -4,9 +4,13 @@
     </div>
     <div class="form-container">
         <form>
-            <label>Title<input type="text" placeholder="Song Title"></label>
+            <!-- <label>Title
+            </label> -->
+                <input type="text" placeholder="Song Title">
             <br>
-            <label>Artist<input type="text" placeholder="Artist Name"></label>
+            <!-- <label>Artist
+            </label> -->
+                <input type="text" placeholder="Artist Name">
             <br>
             <input type="submit">
         </form>
@@ -26,6 +30,7 @@ export default {
     }
     .form-container{
         text-align: center;
+        margin-bottom: 10px;
     }
     input[type=text]{
         padding: 10px;
@@ -40,6 +45,7 @@ export default {
         color: #ffff;
     }
     input[type=submit]{
+        background-color: #ffff;
         border-radius: 10px;
         padding: 10px;
         border: 0;

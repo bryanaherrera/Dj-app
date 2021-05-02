@@ -1,6 +1,13 @@
 <template>
-    <div>
-      <router-view/>
+    <h1>EVENT ID</h1>
+    <div class="input">
+    <input type="text"> <input type="submit">
+    </div>
+    <div class="account">
+      <p>Are you a DJ?</p> 
+      <div class="links">
+        <a><p>Sign Up</p></a> <a><p>Log in</p></a>
+      </div>
     </div>
 </template>
 <script>
@@ -17,20 +24,6 @@
   text-align: center;
   color: #ffff;
   /* margin-top: 60px; */
-}
-body, html {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  min-height: 100vh;
-}
-body{
-    /* height: 100%; */
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: rgb(214, 208, 72);
-    background: linear-gradient(0deg, rgba(214, 208, 72, 1) 0%, rgba(229, 171, 19, 1) 35%, rgba(92, 22, 148, 1) 100%);
 }
 
 input[type=text]{
@@ -55,4 +48,4 @@ input[type=text]{
       margin-top: 5px;
       margin-right: 5px;
     }
-</style>
+</style> 
