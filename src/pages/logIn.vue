@@ -1,24 +1,22 @@
 <template>
-  <div class="container">
-    <h1>EVENT ID</h1>
+<div class="container">
+    <h1>Log in</h1>
     <div class="input">
-      <input type="text"> <Submit></Submit>
+        <input type="text" placeholder="Username"> 
+        <br>
+        <input type="text" placeholder="Password"> 
+        <br>
+        <Submit></Submit>
     </div>
-    <div class="account">
-      <p>Are you a DJ?</p> 
-      <div class="links">
-        <router-link to="/signup" style="text-decoration: none;"><p>Sign Up</p></router-link> <router-link to="/login" style="text-decoration: none;"><p>Log in</p></router-link>
-      </div>
-    </div>
-  </div>
+</div>
 </template>
 <script>
     import Submit from '../components/formSubmit.vue'
     export default {
-      name: 'Landing',
-      components: {
-        Submit
-      }
+        name: 'Landing',
+        components: {
+            Submit
+        }
     }
 </script>
 
@@ -40,16 +38,11 @@ input[type=text]{
         border-radius: 10px;
         background-color: rgb(196, 196, 196, .5);
     }
-    .account {
-      margin-top: 10px;
-    }
-    .account p{
-      display: inline;
-    }
-    .account a {
-      color: rgb(196, 196, 196);
-      margin-top: 5px;
-      margin-right: 5px;
+    input[type=submit]{
+        background-color: #ffff;
+        border-radius: 10px;
+        padding: 10px;
+        border: 0;
     }
     .container {
         position: absolute;
@@ -58,4 +51,4 @@ input[type=text]{
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
-</style> 
+</style>

@@ -1,23 +1,21 @@
 <template>
-  <div class="container">
-    <h1>EVENT ID</h1>
-    <div class="input">
-      <input type="text"> <Submit></Submit>
+    <EventHeader msg="Evan's Big Bash" code="5252" lcoation="Modesto" date="8/12/2021" time="6:00 pm"></EventHeader>
+    <div class="name">
+        <h1>Nickname</h1>
+        <div class="input">
+            <input type="text"> <Submit></Submit>
+        </div>
     </div>
-    <div class="account">
-      <p>Are you a DJ?</p> 
-      <div class="links">
-        <router-link to="/signup" style="text-decoration: none;"><p>Sign Up</p></router-link> <router-link to="/login" style="text-decoration: none;"><p>Log in</p></router-link>
-      </div>
-    </div>
-  </div>
 </template>
 <script>
     import Submit from '../components/formSubmit.vue'
+    import EventHeader from '../components/eventHeader.vue'
+
     export default {
       name: 'Landing',
       components: {
-        Submit
+        Submit,
+        EventHeader
       }
     }
 </script>
@@ -32,7 +30,7 @@
   /* margin-top: 60px; */
 }
 
-input[type=text]{
+    input[type=text]{
         padding: 10px;
         margin-bottom: 5px;
         border: 0;
@@ -40,18 +38,7 @@ input[type=text]{
         border-radius: 10px;
         background-color: rgb(196, 196, 196, .5);
     }
-    .account {
-      margin-top: 10px;
-    }
-    .account p{
-      display: inline;
-    }
-    .account a {
-      color: rgb(196, 196, 196);
-      margin-top: 5px;
-      margin-right: 5px;
-    }
-    .container {
+    .name {
         position: absolute;
         left: 50%;
         top: 50%;

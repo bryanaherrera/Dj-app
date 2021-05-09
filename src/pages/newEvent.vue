@@ -1,22 +1,17 @@
 <template>
-  <Header msg="SONG REQUEST"/>
-  <Form></Form>
-  <Song songTitle='Peaches' songArtist='Justin Bieber'></Song>
-  <Song songTitle='Atlanta Girls' songArtist='Trash Panda'></Song>
-  <Song songTitle='Kiwi' songArtist='Harry Styles'></Song>
+  <Header msg="CREATE AN EVENT"/>
+  <EventForm></EventForm>
 </template>
 
 <script>
-import Header from './components/header.vue'
-import Form from './components/requestForm.vue'
-import Song from './components/songCard.vue'
+import EventForm from '../components/newEventForm.vue'
+import Header from '../components/header.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Form,
-    Song
+    EventForm,
+    Header
   }
 }
 </script>
@@ -44,8 +39,4 @@ body, html {
     background: rgb(214, 208, 72);
     background: linear-gradient(0deg, rgba(214, 208, 72, 1) 0%, rgba(229, 171, 19, 1) 35%, rgba(92, 22, 148, 1) 100%);
 } */
-</style> 
-
-
-
-
+</style>

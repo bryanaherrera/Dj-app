@@ -1,25 +1,26 @@
 <template>
-  <Header msg="SONG REQUEST"/>
-  <Form></Form>
+  <EventHeader msg="Evan's Big Bash" code="5252" lcoation="Modesto" date="8/12/2021" time="6:00 pm"></EventHeader>
   <Song songTitle="Peaches" songArtist="Justin Bieber"></Song> 
   <Song songTitle="Atlanta Girls" songArtist="Trash Panda"></Song> 
   <Song songTitle="Kiwi" songArtist="Harry Styles"></Song> 
+  <div class="backArrow">
+    <router-link to="/homepage"><i class="fas fa-arrow-circle-left fa-2x" style="color: #ffff; text-decoration: none;"></i></router-link>
+  </div>
 </template>
 
 <script>
-import Header from '../components/header.vue'
-import Form from '../components/requestForm.vue'
 import Song from '../components/songCard.vue'
+import EventHeader from '../components/eventHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Form,
-    Song
+    Song,
+    EventHeader
   }
-}
+};
 </script>
+
 
 <style>
 #app {
@@ -29,5 +30,8 @@ export default {
   text-align: center;
   color: #ffff;
   margin-top: 60px;
+}
+.backArrow{
+  margin-top: 10px;
 }
 </style>

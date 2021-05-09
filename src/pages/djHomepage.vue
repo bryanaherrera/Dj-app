@@ -1,10 +1,17 @@
 <template>
-  <Header msg="DJ HILO"/>
-  <Header msg="Events"/>
-  <Event eventName="Evan's Big Bash" eventId="5252"></Event>
+  <div class="djName">
+    <Header msg="DJ HI-LO"/>
+  </div>
+  <div class="eventHeader">
+    <Header msg="Events"/>
+  </div>
+    <router-link to="/event" style="text-decoration: none;"><Event eventName="Evan's Big Bash" eventId="5252"></Event></router-link>
   <Event eventName="Bolin Wedding" eventId="6732"></Event>
   <Event eventName="Leti's Quince" eventId="3827"></Event>
-  <router-link to="/"><p>Create an event</p></router-link>
+  <br>
+  
+    <router-link to="/newEvent" style="text-decoration: none;"><button>Create an event</button></router-link>
+  
 </template>
 
 <script>
@@ -27,7 +34,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffff;
-  /* margin-top: 60px; */
 }
 body, html {
   padding: 0;
@@ -35,13 +41,14 @@ body, html {
   width: 100%;
   min-height: 100vh;
 }
-body{
-    /* height: 100%; */
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background: rgb(214, 208, 72);
-    background: linear-gradient(0deg, rgba(214, 208, 72, 1) 0%, rgba(229, 171, 19, 1) 35%, rgba(92, 22, 148, 1) 100%);
+button {
+  background-color: #ffff;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0;
+}
+.djName{
+  font-size: 30px;
 }
 </style>
 
