@@ -5,12 +5,12 @@
   <div class="eventHeader">
     <Header msg="Events"/>
   </div>
-    <router-link to="/event" style="text-decoration: none;"><Event eventName="Evan's Big Bash" eventId="5252"></Event></router-link>
+    <router-link to="/dj/event" style="text-decoration: none;"><Event eventName="Evan's Big Bash" eventId="5252"></Event></router-link>
   <Event eventName="Bolin Wedding" eventId="6732"></Event>
   <Event eventName="Leti's Quince" eventId="3827"></Event>
   <br>
   
-    <router-link to="/newEvent" style="text-decoration: none;"><button>Create an event</button></router-link>
+    <router-link to="/dj/newEvent" style="text-decoration: none;"><button>Create an event</button></router-link>
   
 </template>
 

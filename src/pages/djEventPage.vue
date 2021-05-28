@@ -4,7 +4,7 @@
   <Song songTitle="Atlanta Girls" songArtist="Trash Panda"></Song> 
   <Song songTitle="Kiwi" songArtist="Harry Styles"></Song> 
   <div class="backArrow">
-    <router-link to="/homepage"><i class="fas fa-arrow-circle-left fa-2x" style="color: #ffff; text-decoration: none;"></i></router-link>
+    <router-link to="/dj/homepage"><i class="fas fa-arrow-circle-left fa-2x" style="color: #ffff; text-decoration: none;"></i></router-link>
   </div>
 </template>
 

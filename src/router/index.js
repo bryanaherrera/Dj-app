@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 
-/// IMport our pages componenets 
+/// Import our pages componenets 
 
 import Home from "../pages/landingPage.vue"
 import DjHomepage from "../pages/djHomepage.vue"
@@ -21,7 +21,7 @@ const routes =[
         component: Home
     },
     {
-        path: "/homepage",
+        path: "/dj/homepage",
         name: "DJhome",
         component: DjHomepage
     },
@@ -31,22 +31,22 @@ const routes =[
         component: QueuePage
     },
     {
-        path: "/login",
+        path: "/dj/login",
         name: "LogIn",
         component: LogIn
     },
     {
-        path: "/newEvent",
+        path: "/dj/newEvent",
         name: "New Event",
         component: NewEvent
     },
     {
-        path: "/signup",
+        path: "/dj/signup",
         name: "Register",
         component: Register
     },
     {
-        path: "/event",
+        path: "/dj/event",
         name: "Event",
         component: Event
     },

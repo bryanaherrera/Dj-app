@@ -7,7 +7,7 @@
     <div class="account">
       <p>Are you a DJ?</p> 
       <div class="links">
-        <router-link to="/signup" style="text-decoration: none;"><p>Sign Up</p></router-link> <router-link to="/login" style="text-decoration: none;"><p>Log in</p></router-link>
+        <router-link to="/dj/signup" style="text-decoration: none;"><p>Sign Up</p></router-link> <router-link to="/dj/login" style="text-decoration: none;"><p>Log in</p></router-link>
       </div>
     </div>
   </div>
